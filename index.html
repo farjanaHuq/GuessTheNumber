@@ -9,6 +9,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Guess The Number</title>
   </head>
  
@@ -21,15 +22,19 @@
     <div class="container-fluid">
          <div class="d-flex justify-content-center">
                 <form>
-                    <div class="form-group" style="height: 100px; width: 300px;" id='guessTheNumber'>
-                    <label for="exampleInputEmail1"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's your guess?">
+                    <div class="form-group" style="height: 100px; width: 300px;" id="guessNumDiv">
+                       <input type="email" class="form-control" id='guessTheNumber' placeholder="What's your guess?" >
                     </div>
                     
-                    <button type="button" class="btn btn-secondary">Check Me</button> <span><button type="button" class="btn btn-light">Restart</button></span>
+                    <button type="button" class="btn btn-secondary" id="checkMe">Check Me</button> 
+                    <span><button type="button" class="btn btn-light" id="restart">Restart</button></span>
                 </form>
+                
         </div>
-        <div class="justify-content-center"></div>
+        <div class="container-fluid" id='randomNumber' >
+          
+        </div>
+        
     </div>
     <script src = index.js></script>
   </body>
